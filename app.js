@@ -10,7 +10,12 @@ app.get("/", (req, res) => res.type('html').send(html));
 app.get('/req', (req, res) => {
     console.log("Just got a request!")
     res.send('Yo!')
-})
+});
+
+app.get("/meunome", (req, res) => {
+  res.send("Meu nome é Fábio Duarte de Oliveira");
+});
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
